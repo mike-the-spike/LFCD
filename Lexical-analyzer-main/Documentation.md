@@ -17,7 +17,10 @@ The scanner uses the following commands:
 ```
 lex lex-analizer.l
 gcc lex.yy.c
-./a.out greatest-common-divisor.txt
+a.exe prime-numbers.txt
 ```
 
-The first command generates the lex.yy.c file, while the second one generates the executable a.out.
+The first command generates the lex.yy.c file, while the second one generates the executable a.exe.
+
+
+The program is made for the special symbols and reserved words that i used in my language, respectively in the problems here as well. I also changed the regex for Identifiers for it to work with diferent letter casing like isPrime as an identifier for example.
