@@ -1,0 +1,39 @@
+START
+k ( int ) .
+read k .
+i ( int ) .
+i = 2 .
+loop if : i < k
+    [
+        isPrime ( bool ) .
+        isPrime = true .
+        if : i <= 3
+        [
+            write i .
+            finish .
+        ] .
+        if : i % 2 == 0
+        [
+            isPrime = false .
+        ] .
+        if : i % 3 == 0
+        [
+            isPrime = false .
+        ] .
+        j ( int ) .
+        j = 5 .
+        loop if : ( j * j ) < i
+        [
+            if : i % j == 0 [ isPrime = false . ] .
+            if : i % ( j + 2 ) == 0
+            [
+                isPrime = false .
+            ] .
+            j = j + 6 .
+        ] .
+        if : isPrime == true
+        [
+            write i .
+        ] .
+    ] .
+END
